@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+body{
+    font-family: 'Poppins', sans-serif !important;
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+.top-nav{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+
+}
+.top-nav .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-nav .container .social-icons a{
+    color: white;
+    padding-right: 5px;
+}
+.top-nav .container .contact-details a{
+    color: white;
+    text-decoration: none;  
+     padding-right: 10px;
+   text-align: center;
+}
+.top-nav .contact-details{
+    display: flex;
+}
+.top-nav .social-icons{
+    display: flex;
+}
+/* -------------navbarr start---------- */
+.slider-img{
+    background-image: url('images/slider.jpg');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.navbar{ 
+    width: 100%;
+    overflow: hidden;
+    text-transform: uppercase;
+    box-shadow: none !important;
+    align-items: center;
+    --bs-navbar-padding-y: 0rem !important;
+    padding-top: 20px !important;
+}
+.navbar-collapse {
+    flex-grow: 0 !important;
+    box-shadow: none !important;
+}
+.navbar-collapse .nav-link{
+    color: black;
+    font-weight: 500 !important;
+    font-size: 0.9rem !important;
+    align-items: center;
+}
+.navbar-collapse .nav-link:hover{
+    background-color:#049902 ;
+    color: white; 
+}
+/* ---------------slider------------- */
+.hero-page-content{
+display: flex;
+flex-direction: column;
+width: 40%;
+float: right;
+margin-top: 170px;
+padding: 30px;
+}
+.hero-page-content h1{
+    font-size: 2.6rem;
+    font-weight: 800;
+}
+.hero-page-content ul li{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+}
+.banner{
+    position: relative;
+    background-color: #049902;
+    width: 100%;
+    display: flex;
+    border-radius: 30px;
+    padding:20px ;
+  transform: translateY( -50px);
+}
+.banner .content{width: 50%;}
+.banner h4{
+color: white;
+ padding: 0px 20px;
+}
+.banner .buttons{
+ display: flex;
+width: 50%;
+justify-content: end;
+}
+.banner .buttons img{
+    width: 200px;
+    margin-left: 20px;
+}
+/* -------------------banner styling end------------- */
+/* --------------------About us section styling---------- */
+.about-us{
+    width: 100%;
+    display: flex;
+    border-radius: 30px;
+  
+}
+.about-us .about-content{
+    width: 50%;
+    padding: 30px;
+}
+
+.about-us .about-content h2{
+font-weight: 900;
+font-size: 2.2rem;
+}
+.about-us .about-content h4{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #f18321;
+    }
+.about-us .about-content .welcome{
+    color: #04a301;
+}
+.about-us .about-content p{
+    font-size: 0.9rem;
+    margin-top: 20px;
+    
+}
+.about-us .about-img{
+    display: flex;
+width: 50%;
+justify-content: end;
+}
+.about-us .about-img img{
+    width:100%;
+  padding: 0 30px 30px 0;
+}
+.about-us .about-content .button{
+    color:white ; 
+    background-color:#049902;
+    padding:10px 20px;
+    border-radius: 10px !important;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+/* ----------------special page ----------- */
+.special-main{
+    background-color: #049902;
+}
+.special-page{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.special-page .upper-section {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: white;
+padding: 20px;
+}
+.special-page .upper-section img{
+    width: 70px;
+}
+.special-page .upper-section h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.special-page .upper-section p{
+    font-size: 0.9rem;
+}
+.special-page .grid-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: white;
+    padding: 20px;
+    padding-bottom: 0;
+    text-align: start;
+    
+}
+.special-page .grid-section .image img{
+   
+   width: 100%;
+   /* height: 370px; */
+   padding: 0px  50px;
+
+  
+}
+.special-page .grid-section .content{
+    padding: 20px;
+
+}
+.special-page .grid-section .content h4{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.special-page .grid-section .content p{
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+}
+/* -----------------------features styling --------------- */
+.feature-page h1{
+    text-align: center;
+    color: #04a301;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.feature{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+} 
+.feature .div1 {
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+padding: 20px;
+}
+.feature .div1 h4{
+    font-size: 1.1rem;
+    font-weight: 600;
+}.feature .div1 {
+    font-size: 0.9rem;
+    margin: auto;
+    align-items: center;
+}
+.feature .div1 img{
+    width: 80px;
+}
+/* -----------------screens section--------- */
+.screens h1{
+    text-align: center;
+    color: #04a301;
+    font-weight: 700;
+    margin-top: 20px;
+}
+/* ------------------Supprt section styling -------------- */
+.support{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+
+}
+.support .image{
+    width: 50%;
+}
+.support .image img{
+width: 100%;
+
+}
+.support .content{
+    width: 50%;
+    justify-content: center;
+    padding: 60px 50px 0px 0px;
+}
+.support .content h1{
+    font-size: 2.5rem;
+}
+.support .content h4{
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+.support .content  .d-flex svg{
+    color: #04a301; 
+    margin-right: 10px;
+}
+.support .content .d-flex {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    
+}
+/* --------------------Our products styling---------- */
+.our-products{
+    background-color:black;
+    padding: 20px;
+    margin-top: 20px;
+}
+.cards-maindiv{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    grid-gap: 20px;
+    padding: 30px 0 50px 0;}
+.cards-maindiv .card{
+    width: 100%;
+     background-color:#f2f3f4;
+     border-radius: 20px !important;
+     padding: 20px;
+  }
+.our-products h1{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.our-products p{
+    color: white !important;
+    text-align: center;
+    font-size: 0.8rem;   
+}
+.our-products .line{
+    border-bottom: 2px solid #04a301;
+    margin: auto;
+    width: 200px;
+   
+}
+.cards-maindiv .card .card-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    height: 230px;
+}
+ .cards-maindiv .card .card-img img{
+    width: 100%;
+    height: 100%;
+    
+ }
+ .cards-maindiv .card .card-img  a{
+    color: black;
+    font-size: 1rem !important;
+    font-weight: 500;
+   text-align: center;
+   text-decoration: none;
+   /* margin-top: 5px; */
+  
+ }
+ .cards-maindiv .card .card-content{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ }
+ .cards-maindiv .card .card-content p{
+    color: #b9b7b7 !important;
+    font-size: 0.7rem;
+    font-weight: 300;
+    line-height: 1.5em;
+    margin-bottom: 0;
+    margin-top: 5px;
+ }
+ .cards-maindiv .card .card-content a{
+    color: #b9b7b7 !important;
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 1.5em;
+   margin: auto;
+   text-decoration: none;
+ }
+.button-area{
+    display: flex;
+ justify-content: center;
+ }
+.product-button{
+    background-color: black;
+    color: #04a301 !important;
+    border: white dotted 2px; 
+    padding: 8px !important;
+ }
+ /* ------------testimonial------------ */
+ .testimonial {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+ }
+ .testimonial .testimonial-content{
+    display: none;
+    flex-direction: column;
+    text-align: center;
+ }
+ .testimonial .testimonial-content  h3{
+    color: #04a301;
+    margin-bottom: 0;
+    font-weight: 700;
+ }
+ .carousel-inner .carousel-item img{
+    padding-top: 10px;
+    padding: 40px;
+ }
+ .carousel-indicators{
+
+    margin-bottom: 0 !important;
+ }
+ .carousel-indicators [data-bs-target] {
+    height: 7px !important;
+    background-color: #04a301 !important;
+}
+ /* ---------------footer section ------------ */
+ .footer-main{
+background-color: black;
+/* margin-top: 20px; */
+align-items: center;
+padding: 20px;
+
+ }
+ .footer-main .footer-section{
+    padding: 30px;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+ }
+.footer-section .footer-social-icons svg{
+    margin-left: 10px;
+    color: white;
+}
+.footer-section .social-links {
+    margin-top: 30px;
+    color: white;
+}
+.footer-section .social-links a{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.footer-section .copyright{
+    margin-top: 20px;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 100;
+    text-decoration: none;
+}
+.footer-main .banner1{
+    background-color: #049902;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    padding:20px ;
+    margin: auto;
+}
+.banner1 .content{width: 100%;}
+.banner1 h3{
+color: white;
+text-align: center;
+}
+.banner1 p{
+    color: white;
+    text-align: center;
+    
+    }
+.banner1 .buttons{
+ display: flex;
+width: 100%;
+justify-content: center;
+align-items: center;
+}
+.banner1 .buttons span{
+    padding: 10px;
+    text-align: center;
+    width: 120px;
+    margin-right: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#04a301;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
